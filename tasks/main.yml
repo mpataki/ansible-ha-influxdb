@@ -1,0 +1,24 @@
+---
+
+- name: influxdb package
+  apt:
+    name: influxdb
+    state: present
+  become: true
+
+- name: influxdb service
+  service:
+    name: influxdb
+    enabled: true
+    state: started
+  become: true
+
+- name: influxdb config
+  copy:
+    src: files/influxdb.conf
+    dest: /etc/influxdb/influxdb.conf
+    owner: root
+    group: root
+  become: true
+  notify:
+    - restart influxdb

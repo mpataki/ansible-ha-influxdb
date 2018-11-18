@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: ha-influxdb
+  role_name: ha_influxdb
   author: Mat Pataki
   description: 'influxdb setup for home assistant'
   company: 'n/a'

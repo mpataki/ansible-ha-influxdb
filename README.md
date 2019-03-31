@@ -1,5 +1,7 @@
 # ansible-ha-influxdb
 
+[![Build Status](https://travis-ci.org/mpataki/ansible-ha-influxdb.svg?branch=master)](https://travis-ci.org/mpataki/ansible-ha-influxdb)
+
 [InfluxDB](https://www.influxdata.com/) is a time series database that has many applications, one of which is storing home monitoring data which can be provided by home assistant.
 
 This ansible role installs and configures InfluxDB for this purpose on a raspberry pi running hassbian.
